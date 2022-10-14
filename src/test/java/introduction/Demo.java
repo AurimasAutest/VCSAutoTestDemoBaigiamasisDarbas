@@ -7,51 +7,55 @@ import java.time.LocalTime;
 
 public class Demo {
 
+//    4 yra lyginis skaičius
+//    Dabar nera 19 valanda
+
     @Test
     public void testIfNumber4IsEven() {
-
-//duomenys
+        // duomenys
         int actualImput = 4;
-        int expedctedResults = 0;
+        int expectedResults = 0;
         int actualResults;
-//        testo veiksmas
 
+        // testo veiksmas
         actualResults = actualImput % 2;
 
-//        palyginimas
-        Assert.assertEquals(actualResults, expedctedResults);
-
+        // palyginimas
+        Assert.assertEquals(actualResults, expectedResults);
     }
 
     @Test
     public void testIfNumber5IsNotEven() {
-
-//duomenys
+        // duomenys
         int actualImput = 5;
-        int expedctedResults = 1;
+        int expectedResults = 1;
         int actualResults;
-//        testo veiksmas
 
+        // testo veiksmas
         actualResults = actualImput % 2;
 
-//        palyginimas
-        Assert.assertTrue(actualResults == expedctedResults);
-
+        // palyginimas
+        Assert.assertTrue(
+                actualResults == expectedResults,
+                "Actual: " + actualResults + ", Expected: " + expectedResults);
     }
 
     @Test
-    public void testifTaimNowisNot19Hour() {
-
+    public void testIfTimeNowIsNot19Hour() {
+        // duomenys
         int notExpextedTime = 19;
         int actualTime;
         boolean isSameTime;
 
-
+        // test veikmas
         actualTime = LocalTime.now().getHour();
 
-        isSameTime = notExpextedTime == actualTime;
+        isSameTime = notExpextedTime == actualTime; // expected false
 
-        Assert.assertFalse(isSameTime, String.format("Expected: %s, Acutal: %s", notExpextedTime, actualTime)
+        // palyginimas
+        Assert.assertFalse(
+                isSameTime,
+                String.format("Expected: %s, Acutal: %s", notExpextedTime, actualTime)
         );
     }
 }
