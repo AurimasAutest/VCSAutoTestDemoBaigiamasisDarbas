@@ -1,13 +1,41 @@
 # cia yra README failas
 
-mano failas 
+BAIGIAMASIS DARBAS
 
-Baigiamasis darbas
+Testuojamas puslapis www.danija.lt
 
-# Testavimo scenaijai
+1 Testas:
 
-1. TC pavadinimas
-   2. Tekstas
+# Testavimo scenaijai:
 
-* Ecpekted result
-[saitas] 
+* TS1 LoginPage:
+* Test Steps
+  * TC1 LoginEmail;
+  * TC2 Log0in password;
+  * TC3 Button Login;
+
+# Testavimo rezultatai:
+* Status
+  * Pass
+  * Pass
+  * Pass
+
+
+2 Testas:
+
+# Testavimo scenaijai:
+
+* TS1 RegistrationPage
+  Test Steps
+  * TC1 InputName;
+  * TC2 InputLastName;
+  * TC3 clickButtonRegistration;
+
+# Testavimo rezultatai:
+* Status
+  * Pass
+  * Pass
+  * Pass
+
+3 Testas:
+
