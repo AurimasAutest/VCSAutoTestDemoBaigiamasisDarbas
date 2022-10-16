@@ -1,5 +1,3 @@
-# cia yra README failas
-
 BAIGIAMASIS DARBAS
 
 Testuojamas puslapis www.danija.lt
