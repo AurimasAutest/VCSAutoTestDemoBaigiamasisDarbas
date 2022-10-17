@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Testing Selenium easy" parallel="methods" thread-count="4">
-    <test name="Demo Test">
+<suite name="Testing lt.Aurimas" parallel="methods" thread-count="4">
+    <test name="Danija">
         <classes>
-            <class name="pom.tests.seleniumEasy.FirstFormDemoTest"/>
-            <class name="pom.tests.seleniumEasy.SelectDropdownDemoTest"/>
-            <class name="pom.tests.seleniumEasy.RadioButtonDemoTest"/>
-            <class name="pom.tests.seleniumEasy.AlertBoxDemoTest"/>
-
+            <class name="lt.Aurimas.Tests.Danija.LoginTest">
+            <class name="lt.Aurimas.Tests.Danija.RegistrationTest">
+            <class name="lt.Aurimas.Tests.Danija.ShoppingTest">
         </classes>
     </test>
 </suite>
