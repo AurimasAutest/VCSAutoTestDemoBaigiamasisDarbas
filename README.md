@@ -14,9 +14,12 @@ Testuojamas puslapis www.danija.lt
 
 # Testavimo rezultatai:
 * Status
-  * Pass
-  * Pass
-  * Pass
+
+[//]: # (  * Pass)
+
+[//]: # (  * Pass)
+
+[//]: # (  * Pass)
 
 
 2 Testas:
@@ -30,10 +33,31 @@ Testuojamas puslapis www.danija.lt
   * TC3 clickButtonRegistration;
 
 # Testavimo rezultatai:
-* Status
-  * Pass
-  * Pass
-  * Pass
+
+[//]: # (* Status)
+
+[//]: # (  * Pass)
+
+[//]: # (  * Pass)
+
+[//]: # (  * Pass)
 
 3 Testas:
+# Testavimo scenaijai:
+
+* TS1 ShoppingPage
+  Test Steps
+  * TC1 krepselis;
+  * TC2 beRegistracijos;
+  * TC3 apmokejimas;
+
+# Testavimo rezultatai:
+
+[//]: # (* Status)
+
+[//]: # (  * Pass)
+
+[//]: # (  * Pass)
+
+[//]: # (  * Pass)
 

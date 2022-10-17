@@ -3,27 +3,32 @@ package lt.Aurimas.Utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 
-
 public class Driver {
-    WebDriver driver;
-    @BeforeMethod
-    private void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.get("https://danija.lt/prisijungimas?login=1");
-        driver.get("https://danija.lt/prisijungimas?email=aurimas.a.morkunas%40gmail.com");
-        driver.get("https://danija.lt/greitas-uzsakymas");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    private static WebDriver driver;
 
+    public static void setDriver() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver(setUpOptions());
+        driver.manage().deleteAllCookies();
     }
-    @AfterMethod
-    private void close() {
+
+    public static void openUrl(String url) {
+        driver.get(url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    }
+
+    public static void close() {
         driver.quit();
+       }
+    private static ChromeOptions setUpOptions(){
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("window-size=1500,3000");
+        options.addArguments("--force-device-scale-factor=0.50");
+        return options;
     }
-}
+    }
+

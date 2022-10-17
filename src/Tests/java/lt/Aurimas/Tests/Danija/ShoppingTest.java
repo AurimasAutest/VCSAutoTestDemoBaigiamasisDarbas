@@ -1,10 +1,11 @@
 package lt.Aurimas.Tests.Danija;
 
-import lt.Aurimas.Pages.Danija.LoginPage;
 import lt.Aurimas.Pages.Danija.ShoppingPage;
+import lt.Aurimas.Tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pom.tests.TestBase;
+
 
 public class ShoppingTest {
     public class ShoppingTest extends TestBase {
@@ -19,13 +20,13 @@ public class ShoppingTest {
         @Test
         private void testLoginPositive(){
             String krepselis = "Fila";
-            String beRegistracjos = ();
-            String apmokejimas = ();
+            String buttonbeRegistracjos = "";
+            String buttonapmokejimas = "";
 
             ShoppingPage.clickLoginIcon(krepselis);
-            ShoppingPage.clickLoginIcon(beRegistracjos);
-            ShoppingPage.clickLoginIcon(apmokejimas)
-
+            ShoppingPage.clickLoginIcon(buttonbeRegistracjos);
+            ShoppingPage.clickLoginIcon(buttonapmokejimas);
+            Assert.assertEquals(krepselis, buttonbeRegistracjos, buttonapmokejimas);
         }
     }
 }

@@ -1,16 +1,26 @@
 package lt.Aurimas.Pages.Danija;
 
-import lt.Aurimas.Pages.Locators;
-import pom.pages.Common;
+import lt.Aurimas.Pages.Common;
 
 public class RegistrationPage {
+    public static void setUp(){
+
+        Common.setUp();
+    }
     public static void open(String url) {
+
         Common.openUrl(url);
     }
-    public static void clickLoginIcon() {
-        Common.clickElement(Locators.Danija.Registration.inputEmail);
+    public static void close() {
 
-        Common.clickElement(Locators.Danija.Login.inputPassword);
+        Common.close();
+    }
 
-        Common.clickElement(Locators.Danija.Login.buttonLogin);
+    public static void clickLoginIcon(String expectedText) {
+
+    }
+
+    public static void clickButtonRegistration() {
+
+    }
 }

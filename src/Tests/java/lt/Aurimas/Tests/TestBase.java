@@ -9,7 +9,7 @@ public class TestBase {
 
     @BeforeMethod
      public void setUp(){
-        Common.setUpDriver();
+        Common.setUp();
         }
 
     @AfterMethod

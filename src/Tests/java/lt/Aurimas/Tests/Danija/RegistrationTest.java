@@ -1,9 +1,10 @@
 package lt.Aurimas.Tests.Danija;
 
 import lt.Aurimas.Pages.Danija.RegistrationPage;
+import lt.Aurimas.Tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pom.tests.TestBase;
 
 public class RegistrationTest extends TestBase {
 
@@ -15,14 +16,16 @@ public class RegistrationTest extends TestBase {
     }
 
     @Test
-    public void registerWithPositiveInfo()
+
+    public void registerWithPositiveInfo() {
         String expectedText = "NewRegistration";
         String actualText = "";
 
+        RegistrationPage.clickLoginIcon(expectedText);
+        RegistrationPage.clickLoginIcon(actualText);
+        RegistrationPage.clickButtonRegistration();
 
+        Assert.assertEquals(expectedText, actualText);
 
-//        RegistrationPage.inputName("Aurimas");
-//        RegistrationPage.inputLastName("Morkunas");
-//        RegistrationPage.clickButtonRegistration();
-
+    }
 }

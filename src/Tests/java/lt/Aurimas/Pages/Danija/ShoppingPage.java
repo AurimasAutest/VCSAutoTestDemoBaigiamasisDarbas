@@ -1,16 +1,22 @@
 package lt.Aurimas.Pages.Danija;
 
-import lt.Aurimas.Pages.Locators;
-import pom.pages.Common;
+import lt.Aurimas.Pages.Common;
 
 public class ShoppingPage {
+    public static void setUp(){
+
+        Common.setUp();
+    }
     public static void open(String url) {
+
         Common.openUrl(url);
     }
-    public static void clickLoginIcon() {
-        Common.clickElement(Locators.Danija.Login.krepselis);
+    public static void close() {
 
-        Common.clickElement(Locators.Danija.Login.beRegistracijos);
+        Common.close();
+    }
 
-        Common.clickElement(Locators.Danija.Login.apmokejimas);
+    public static void clickLoginIcon(String krepselis) {
+
+    }
 }

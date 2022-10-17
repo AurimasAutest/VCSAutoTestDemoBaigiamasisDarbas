@@ -14,9 +14,11 @@ public class Locators {
         }
         public static class Registration {
 
-            public static By inputName = By.xpath("//*[@id='authentication']/main/div/div/form/div/label[4]/input");
+            public static By inputName = By.xpath
+                    ("//*[@id='authentication']/main/div/div/form/div/label[4]/input");
 
-            public static By inputLastName = By.xpath("//*[@id='authentication']/main/div/div/form/div/label[5]/input");
+            public static By inputLastName = By.xpath
+                    ("//*[@id='authentication']/main/div/div/form/div/label[5]/input");
 
             public static By buttonRegistration = By.xpath("//*[@id='submitAccount']");
         }
