@@ -14,4 +14,16 @@ public class Common {
     public static void close() {
         Driver.close();
     }
+
+    public static void login(String loginEmail) {
+
+    }
+
+    public static void click(String expectedText) {
+
+    }
+
+    public static void Icon(String krepselis) {
+
+    }
 }

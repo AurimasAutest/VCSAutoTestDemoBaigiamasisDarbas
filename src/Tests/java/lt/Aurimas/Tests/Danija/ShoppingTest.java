@@ -26,6 +26,7 @@ public class ShoppingTest {
             ShoppingPage.clickLoginIcon(krepselis);
             ShoppingPage.clickLoginIcon(buttonbeRegistracjos);
             ShoppingPage.clickLoginIcon(buttonapmokejimas);
+
             Assert.assertEquals(krepselis, buttonbeRegistracjos, buttonapmokejimas);
         }
     }

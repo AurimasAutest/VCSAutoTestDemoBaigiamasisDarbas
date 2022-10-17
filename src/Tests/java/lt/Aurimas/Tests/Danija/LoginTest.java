@@ -28,13 +28,4 @@ public class LoginTest extends TestBase {
 
         Assert.assertEquals(loginEmail, password);
     }
-//    WebElement inputUserEmail =
-//            driver.findElement(By.xpath("//*[@id='userEmail']"));
-//        inputUserEmail.sendKeys(expectedUserEmail);
-//
-//    WebElement buttonSubmit = driver.findElement(By.xpath("//*[@id='submit']"));
-//        buttonSubmit.click();
-//
-//    WebElement textUserEmail = driver.findElement(By.xpath("//*[@id='email']"));
-//    actualUserEmail = textUserEmail.getText();
 }

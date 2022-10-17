@@ -17,10 +17,12 @@ public class RegistrationPage {
     }
 
     public static void clickLoginIcon(String expectedText) {
+        Common.click(expectedText);
 
     }
 
     public static void clickButtonRegistration() {
+        Common.click();
 
     }
 }

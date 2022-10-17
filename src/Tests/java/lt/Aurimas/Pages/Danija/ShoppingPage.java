@@ -17,6 +17,7 @@ public class ShoppingPage {
     }
 
     public static void clickLoginIcon(String krepselis) {
+        Common.Icon(krepselis);
 
     }
 }

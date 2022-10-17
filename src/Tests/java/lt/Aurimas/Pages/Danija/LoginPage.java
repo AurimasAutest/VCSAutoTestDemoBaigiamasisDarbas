@@ -17,7 +17,7 @@ public class LoginPage {
     }
 
     public static void clickElement(String loginEmail) {
-
+        Common.login(loginEmail);
     }
 }
 
